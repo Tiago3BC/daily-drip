@@ -101,7 +101,7 @@ d2_total_days = (d2_end_date - d2_start_date).days + 1
 
 container1.markdown("<h3 style='text-align: center;'>Intensity 🌧️</h3>", unsafe_allow_html=True)
 
-container2.markdown("<h3 style='text-align: center;'>Daily Distribution 📊</h3>", unsafe_allow_html=True)
+container2.markdown("<h3 style='text-align: center;'>Daily Distribution 🗓️</h3>", unsafe_allow_html=True)
 
 #Comment
 container4.write("*The Information was precleaned so it only shows data from ***7am*** to ***17pm***.*")
@@ -156,7 +156,7 @@ container3.metric(label="Rain Frequency", value=f"{rainy_days} out of {total_day
 
 d2_container1.markdown("<h3 style='text-align: center;'>Intensity 🌧️</h3>", unsafe_allow_html=True)
 
-d2_container2.markdown("<h3 style='text-align: center;'>Daily Distribution 📊</h3>", unsafe_allow_html=True)
+d2_container2.markdown("<h3 style='text-align: center;'>Daily Distribution 🗓️</h3>", unsafe_allow_html=True)
 
 #Comment
 d2_container4.write("*The information was precleaned so it only shows data from ***7am*** to ***17pm***.*")
