@@ -114,10 +114,10 @@ else:
     
     fig.update_layout(
         height=385,
-        margin=dict(t=40, b=0, l=0, r=0),
+        margin=dict(t=0, b=100, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
-        y=-0.1,
+        y=-0.5,
         xanchor="center",
         x=0.5))
     
@@ -170,10 +170,10 @@ else:
     
     d2_fig.update_layout(
         height=385,
-        margin=dict(t=40, b=0, l=0, r=0),
+        margin=dict(t=0, b=100, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
-        y=-0.1,
+        y=-0.5,
         xanchor="center",
         x=0.5))
     
