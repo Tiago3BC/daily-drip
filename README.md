@@ -17,14 +17,15 @@
 
 ## 📁 Project Structure
 
+Project Structure
+-----------------
+
 daily-drip/
-├── main.py                  # Main Streamlit app
-├── data\_cleaning.py         # Logic to clean raw rain data
-├── fallback.csv             # Default dataset if no upload
-├── README.md
-├── requirements.txt
-└── .streamlit/
-└── config.toml          # Optional Streamlit theme config
+├── main.py                # Streamlit app – handles UI, charts, and layout
+├── data_cleaning.py       # Data cleaning logic – handles formatting and classification
+├── fallback.csv           # Default dataset used when no CSV is uploaded
+├── requirements.txt       # List of required Python libraries
+├── README.md              # Project documentation
 
 ---
 
