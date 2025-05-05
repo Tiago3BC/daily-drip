@@ -1,16 +1,35 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-
-# Load data and convert to date
-rain_data = pd.read_csv("final.csv")
-rain_data['Date'] = pd.to_datetime(rain_data['Date']).dt.date
+from data_cleaning import clean_rain_data
 
 st.set_page_config(
     page_title="The Daily Drip",
     page_icon="☔️",
     layout="wide",
 )
+
+uploaded_file = st.sidebar.file_uploader("Upload your rain CSV", type=["csv"])
+
+if uploaded_file is not None:
+    with open("temp.csv", "wb") as f:
+        f.write(uploaded_file.getbuffer())
+
+    cleaned_df = clean_rain_data("temp.csv")
+
+    st.sidebar.success("Data cleaned successfully! Here's a snippet:")
+    st.sidebar.dataframe(cleaned_df.head(10))
+
+    rain_data = cleaned_df
+
+    csv = cleaned_df.to_csv(index=False).encode('utf-8')
+    st.sidebar.download_button("Download cleaned CSV", data=csv, file_name="rain-data-cleaned.csv", mime="text/csv")
+
+else:
+    rain_data = pd.read_csv("fallback.csv")
+
+
+rain_data['Date'] = pd.to_datetime(rain_data['Date']).dt.date
 
 st.markdown("<h1 style='text-align: left;'>The Daily Drip ☔️</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: left;'>Dashboard 1</h1>", unsafe_allow_html=True)
@@ -80,7 +99,7 @@ total_days = (end_date - start_date).days + 1
 d2_total_days = (d2_end_date - d2_start_date).days + 1
 
 
-container1.markdown("<h3 style='text-align: center;'>Rain Intensity 🌧️</h3>", unsafe_allow_html=True)
+container1.markdown("<h3 style='text-align: center;'>Intensity 🌧️</h3>", unsafe_allow_html=True)
 
 container2.markdown("<h3 style='text-align: center;'>Daily Distribution 📊</h3>", unsafe_allow_html=True)
 
@@ -113,11 +132,11 @@ else:
         textposition='inside')])
     
     fig.update_layout(
-        height=385,
-        margin=dict(t=0, b=0, l=0, r=0),
+        height=300,
+        margin=dict(t=10, b=10, l=0, r=0),
         legend=dict(orientation="h",
-        yanchor="bottom",
-        y=-0.5,
+        yanchor="top",
+        y=0.0,
         xanchor="center",
         x=0.5))
     
@@ -135,7 +154,7 @@ container3.metric(label="Rain Frequency", value=f"{rainy_days} out of {total_day
 
 #--------------------------------------------DASHBOARD 2#--------------------------------------------
 
-d2_container1.markdown("<h3 style='text-align: center;'>Rain Intensity 🌧️</h3>", unsafe_allow_html=True)
+d2_container1.markdown("<h3 style='text-align: center;'>Intensity 🌧️</h3>", unsafe_allow_html=True)
 
 d2_container2.markdown("<h3 style='text-align: center;'>Daily Distribution 📊</h3>", unsafe_allow_html=True)
 
@@ -169,11 +188,11 @@ else:
         textposition='inside')])
     
     d2_fig.update_layout(
-        height=385,
-        margin=dict(t=0, b=0, l=0, r=0),
+        height=300,
+        margin=dict(t=10, b=10, l=0, r=0),
         legend=dict(orientation="h",
-        yanchor="bottom",
-        y=-0.5,
+        yanchor="top",
+        y=-0.0,
         xanchor="center",
         x=0.5))
     
