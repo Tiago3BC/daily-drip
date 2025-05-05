@@ -1,4 +1,3 @@
-```markdown
 # ☔️ The Daily Drip
 
 **The Daily Drip** is an interactive Streamlit dashboard for exploring and visualizing daily rainfall data. It provides a clean, engaging UI to upload, clean, and analyze rain measurements, including donut charts for rain intensity, daily distributions, and key weather stats.
@@ -18,8 +17,6 @@
 
 ## 📁 Project Structure
 
-```
-
 daily-drip/
 ├── main.py                  # Main Streamlit app
 ├── data\_cleaning.py         # Logic to clean raw rain data
@@ -28,8 +25,6 @@ daily-drip/
 ├── requirements.txt
 └── .streamlit/
 └── config.toml          # Optional Streamlit theme config
-
-````
 
 ---
 
