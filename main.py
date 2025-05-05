@@ -37,19 +37,19 @@ st.markdown("<h3 style='text-align: left;'>Dashboard 1</h1>", unsafe_allow_html=
 ##--------------------------------------------DASHBOARD 1#--------------------------------------------
 # Create containers for the layout
 col1, col2, col3, col4 = st.columns((1,2,1,1))
-container1 = col1.container(height=514, border=True)
-container2 = col2.container(height=514, border=True)
-container3 = col3.container(height=514, border=True)
-container4 = col4.container(height=514 ,border=True)
+container1 = col1.container(height=515, border=True)
+container2 = col2.container(height=515, border=True)
+container3 = col3.container(height=515, border=True)
+container4 = col4.container(height=515 ,border=True)
 
 st.markdown("---")
 st.markdown("<h3 style='text-align: left;'>Dashboard 2</h3>", unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns((1,2,1,1))
-d2_container1 = col1.container(height= 514, border=True)
-d2_container2 = col2.container(height=514, border=True)
-d2_container3 = col3.container(height=514, border=True)
-d2_container4 = col4.container(height=514, border=True)
+d2_container1 = col1.container(height= 515, border=True)
+d2_container2 = col2.container(height=515, border=True)
+d2_container3 = col3.container(height=515, border=True)
+d2_container4 = col4.container(height=515, border=True)
 
 #Controls D1
 container4.markdown("<h3 style='text-align: center;'>Controls 🎮</h3>", unsafe_allow_html=True)
