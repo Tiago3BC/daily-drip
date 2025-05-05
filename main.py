@@ -113,7 +113,7 @@ else:
         textposition='inside')])
     
     fig.update_layout(
-        height=420,
+        height=385,
         margin=dict(t=40, b=0, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
@@ -169,7 +169,7 @@ else:
         textposition='inside')])
     
     d2_fig.update_layout(
-        height=419,
+        height=385,
         margin=dict(t=40, b=0, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
