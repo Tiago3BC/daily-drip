@@ -18,18 +18,18 @@ st.markdown("<h3 style='text-align: left;'>Dashboard 1</h1>", unsafe_allow_html=
 ##--------------------------------------------DASHBOARD 1#--------------------------------------------
 # Create containers for the layout
 col1, col2, col3, col4 = st.columns((1,2,1,1))
-container1 = col1.container(border=True)
-container2 = col2.container(border=True)
-container3 = col3.container(border=True)
+container1 = col1.container(height=514, border=True)
+container2 = col2.container(height=514, border=True)
+container3 = col3.container(height=514, border=True)
 container4 = col4.container(height=514 ,border=True)
 
 st.markdown("---")
 st.markdown("<h3 style='text-align: left;'>Dashboard 2</h3>", unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns((1,2,1,1))
-d2_container1 = col1.container(border=True)
-d2_container2 = col2.container(border=True)
-d2_container3 = col3.container(border=True)
+d2_container1 = col1.container(height= 514, border=True)
+d2_container2 = col2.container(height=514, border=True)
+d2_container3 = col3.container(height=514, border=True)
 d2_container4 = col4.container(height=514, border=True)
 
 #Controls D1
@@ -114,7 +114,7 @@ else:
     
     fig.update_layout(
         height=385,
-        margin=dict(t=0, b=100, l=0, r=0),
+        margin=dict(t=0, b=0, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
         y=-0.5,
@@ -170,7 +170,7 @@ else:
     
     d2_fig.update_layout(
         height=385,
-        margin=dict(t=0, b=100, l=0, r=0),
+        margin=dict(t=0, b=0, l=0, r=0),
         legend=dict(orientation="h",
         yanchor="bottom",
         y=-0.5,
