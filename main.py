@@ -173,7 +173,7 @@ else:
     d2_chart_data = d2_filtered_data.copy()
     d2_chart_data['Date'] = d2_chart_data['Date'].astype(str)
 
-    d2_container2.bar_chart(d2_chart_data.set_index('Date')['Precipitation (mm)'], color='#ffb347' ,height=412)
+    d2_container2.bar_chart(d2_chart_data.set_index('Date')['Precipitation (mm)'], color='#66b3ff' ,height=412)
 
     #Display donut chart
     d2_chart_data = d2_filtered_data.copy()
@@ -182,7 +182,7 @@ else:
         labels=d2_intensity_counts.index,
         values=d2_intensity_counts.values,
         hole=0.6,
-        marker=dict(colors=["#ffd8a8", "#ffb347", "#ff922b", "#e8590c"]),
+        marker=dict(colors=["#cce5ff", "#66b3ff", "#339af0", "#1864ab"]),
         textinfo='percent',
         textfont=dict(color="white"),
         textposition='inside')])
