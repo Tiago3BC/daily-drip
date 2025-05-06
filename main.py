@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-uploaded_file = st.sidebar.file_uploader("Upload your rain CSV", type=["csv"])
+uploaded_file = st.sidebar.file_uploader("Upload your [**MeteoBlue**](https://www.meteoblue.com/en/weather/archive/export?daterange=2024-01-01%20-%202025-05-06&locations%5B%5D=jardim-de-bel%25c3%25a9m_portugal_11810184&domain=ERA5T&params%5B%5D=&params%5B%5D=&params%5B%5D=precip&params%5B%5D=&params%5B%5D=&params%5B%5D=&params%5B%5D=&params%5B%5D=&params%5B%5D=&utc_offset=%2B00%3A00&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30) rain CSV", type=["csv"])
 
 if uploaded_file is not None:
     with open("temp.csv", "wb") as f:
