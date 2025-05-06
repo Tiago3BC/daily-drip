@@ -221,3 +221,5 @@ with d3_container1.expander("Show data (Dashboard 1)", expanded=False):
 
 with d3_container2.expander("Show data (Dashboard 2)", expanded=False):
     st.dataframe(d2_filtered_data.reset_index(drop=True))
+
+print("Dashboard 1 Data:")
