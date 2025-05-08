@@ -22,10 +22,10 @@
 ```
 daily-drip/
 ├── data-prep
-   ├── data-prep-rain.ipynb     # 1st try at data cleaning logic via notebook
-   ├── rain-data-processed.csv
+|   ├── data-prep-rain.ipynb     # 1st try at data cleaning logic via notebook
+|   ├── rain-data-processed.csv
 ├── historical-data             # where historical data is stored
-    ├── original-data.csv
+|    ├── original-data.csv
 ├── main.py                     # Streamlit app – handles UI, charts, and layout
 ├── data_cleaning.py            # Data cleaning logic – handles formatting and classification
 ├── fallback.csv                # Default dataset used when no CSV is uploaded
