@@ -1,9 +1,9 @@
 [theme]
 base = "light"
-primaryColor = "#FF9F45"              
-backgroundColor = "#F5F3FF"            
-secondaryBackgroundColor = "#FFFFFF"   
-textColor = "#3D2C5F"                
+primaryColor = "#6C63FF"              # Vibrant Purple
+backgroundColor = "#EAF6FF"           # Light Blue
+secondaryBackgroundColor = "#FFFFFF"  # White for contrast
+textColor = "#2B2D42"                 # Deep bluish-gray
 font = "Helvetica"
 
 [server]
