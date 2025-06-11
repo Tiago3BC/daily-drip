@@ -1,9 +1,9 @@
 [theme]
 base = "light"
-primaryColor = "#A89BFF"              # Soft Lavender Purple
-backgroundColor = "#FFFFFF"           # Pure White Background
-secondaryBackgroundColor = "#F5F7FA"  # Light Gray-Blue (soft card contrast)
-textColor = "#3C3F58"                 # Muted Indigo/Gray for good readability
+primaryColor = "#A89BFF"             # Soft Lavender Purple
+backgroundColor = "#FFFFFF"          # Pure White Background
+secondaryBackgroundColor = "#F5F7FA" # Light Gray-Blue (soft card contrast)
+textColor = "#3C3F58"                # Muted Indigo/Gray for good readability
 font = "Helvetica"
 
 [server]
